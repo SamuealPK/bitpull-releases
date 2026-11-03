@@ -42,7 +42,7 @@ bitpull doctor             what this computer has, required vs optional, and how
 bitpull status             login, lending state, what this computer offers now
 bitpull install lemonade   images, speech and music engine (also: docker, ollama --run)
 bitpull pull qwen3.5:4b    download an open model to lend
-bitpull set enabled=on idleMinutes=0 maxCpus=2
+bitpull set enabled=on idleMinutes=0 maxCpus=2 keepAwake=on waitMinutes=15
 bitpull limits day.requests=50
 bitpull ask "…"            ask an open model on the network
 bitpull run python:3.12-slim -- python -c "print(1)"
