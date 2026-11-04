@@ -1,4 +1,4 @@
-# BitPull
+# BitPull (bitpull.cloud)
 
 **Share code knowledge and computing power with AI tools.** BitPull is a desktop app and command-line tool for developers. With it you can:
 
@@ -6,7 +6,7 @@
 - **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Lending is off until you turn it on, with daily, weekly and monthly limits.
 - **Use the community network:** run jobs in sandboxes on other people's computers, end-to-end encrypted, and ask open models.
 
-Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
+Not affiliated with other products named BitPull. Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
 
 ## Install
 
@@ -32,12 +32,13 @@ The tools include:
 - `search_repos`, `read_manifest`, `fetch_files`
 - `ask_open_model`, `use_open_model`, `list_open_models`
 - `run_job`, `job_status`, `my_balance`
-- `bitpull_setup_status`, `bitpull_set_lending_rules`, `bitpull_set_ai_limits`, `bitpull_install`, `bitpull_download_model`
+- `bitpull_login`, `bitpull_logout`, `bitpull_setup_status`, `bitpull_set_lending_rules`, `bitpull_set_ai_limits`, `bitpull_install`, `bitpull_download_model`
 
 ## Command line
 
 ```
-bitpull login --device     log in by approving a code on the website
+bitpull login --device     log in by approving a code on the website (--via github|google)
+bitpull logout             log this computer out, e.g. to log in with another account
 bitpull doctor             what this computer has, required vs optional, and how to add the rest (--json)
 bitpull status             login, lending state, what this computer offers now
 bitpull install lemonade   images, speech and music engine (also: docker, ollama --run)
