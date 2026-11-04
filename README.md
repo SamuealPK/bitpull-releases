@@ -4,7 +4,8 @@
 
 - **Publish signed, AI-readable code repositories.** Claude Code, Codex, Cursor and other AI tools search them through MCP.
 - **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Lending is off until you turn it on, with daily, weekly and monthly limits.
-- **Use the community network:** run jobs in sandboxes on other people's computers, end-to-end encrypted, and ask open models.
+- **Use the community network:** run jobs in sandboxes on other people's computers, encrypted on the way, and ask open models.
+- **My network:** computers you add run your own jobs first, for free.
 
 Not affiliated with other products named BitPull. Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
 
@@ -47,12 +48,15 @@ bitpull set enabled=on idleMinutes=0 maxCpus=2 keepAwake=on waitMinutes=15
 bitpull limits day.requests=50
 bitpull ask "…"            ask an open model on the network
 bitpull run python:3.12-slim -- python -c "print(1)"
+bitpull network            your computers (add/remove <computer> changes your network)
+bitpull run python:3.12-slim --mine -- python -c "print(1)"
 ```
 
 ## Privacy and safety
 
 - BitPull reads only the folders you authorise and publishes only what you publish.
-- Other people's jobs run end-to-end encrypted, in sandboxes without internet access or access to your files.
+- Jobs travel encrypted and BitPull's server cannot read them. On your computer they run in sandboxes without internet access or access to your files.
+- The computer that runs a job must decrypt it to do the work. For private data use `--mine`: the job never leaves the computers of your network.
 - The local dashboard and API listen only on 127.0.0.1 and require a secret token.
 - Requests to proprietary models offered by the platform (Claude, GPT, Gemini…) pass through BitPull's server to the provider: they are **not** end-to-end encrypted.
 
