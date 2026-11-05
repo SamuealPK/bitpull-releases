@@ -5,7 +5,7 @@
 - **Publish signed, AI-readable code repositories.** Claude Code, Codex, Cursor and other AI tools search them through MCP.
 - **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Lending is off until you turn it on, with daily, weekly and monthly limits.
 - **Use the community network:** run jobs in sandboxes on other people's computers, encrypted on the way, and ask open models.
-- **My network:** computers you add run your own jobs first, for free.
+- **My network:** computers you add run your own jobs first, for free. They can also run one larger model together, from the dashboard.
 
 Not affiliated with other products named BitPull. Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
 
