@@ -6,6 +6,8 @@
 - **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Lending is off until you turn it on, with daily, weekly and monthly limits.
 - **Use the community network:** run jobs in sandboxes on other people's computers, encrypted on the way, and ask open models.
 - **My network:** computers you add run your own jobs first, for free. They can also run one larger model together, from the dashboard, and offer it to others for credits.
+- **Chat and local APIs:** a chat page for every model, and OpenAI, Claude Messages and Ollama compatible endpoints on this computer for your other tools.
+- **Projects:** work on a folder with a model, with diffs, a terminal, Stop and Undo. Ask always, accept edits or auto, where commands run in a sandbox without internet.
 - **Costs less:** models run on computers people already own. No monthly fee with pay as you go, or plans from €4.50 a month, VAT included.
 
 Not affiliated with other products named BitPull. Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
@@ -34,6 +36,7 @@ The tools include:
 - `search_repos`, `read_manifest`, `fetch_files`
 - `ask_open_model`, `use_open_model`, `list_open_models`
 - `ask_group_model`, `list_group_models`: the model run by the person's own group of computers
+- `bitpull_groups`, `bitpull_start_group`, `bitpull_stop_group`, `bitpull_share_group` and the others named `bitpull_*`: every item of the app's control panel
 - `run_job`, `job_status`, `my_balance`
 - `bitpull_login`, `bitpull_logout`, `bitpull_setup_status`, `bitpull_set_lending_rules`, `bitpull_set_ai_limits`, `bitpull_install`, `bitpull_download_model`
 
@@ -57,13 +60,12 @@ bitpull run python:3.12-slim --mine -- python -c "print(1)"
 ## Privacy and safety
 
 - BitPull reads only the folders you authorise and publishes only what you publish.
-- Jobs travel encrypted and BitPull's server cannot read them. On your computer they run in sandboxes without internet access or access to your files.
+- Jobs travel encrypted and BitPull's server cannot read them. The computer that runs a job reads its content to do the work: for private data, use only your own computers. On your computer they run in sandboxes without internet access or access to your files. More at https://bitpull.cloud/security
 - The computer that runs a job must decrypt it to do the work. For private data use `--mine`: the job never leaves the computers of your network.
 - The local dashboard and API listen only on 127.0.0.1 and require a secret token.
 - Requests to proprietary models offered by the platform (Claude, GPT, Gemini…) pass through BitPull's server to the provider: they are **not** end-to-end encrypted.
 
 Terms: https://bitpull.cloud/legal/terms · Privacy: https://bitpull.cloud/legal/privacy
-
 ## Downloads in this repository
 
 This repository hosts the signed release builds of the BitPull desktop app; the source code is private. Get the latest version from the [Releases](https://github.com/SamuealPK/bitpull-releases/releases/latest) page, from https://bitpull.cloud/download or with the install scripts above.
