@@ -7,7 +7,8 @@
 - **Use the community network:** run jobs in sandboxes on other people's computers, encrypted on the way, and ask open models.
 - **My network:** computers you add run your own jobs first, for free. They can also run one larger model together, from the dashboard, and offer it to others for credits.
 - **Chat and local APIs:** a chat page for every model, and OpenAI, Claude Messages and Ollama compatible endpoints on this computer for your other tools.
-- **Projects:** work on a folder with a model, with diffs, a terminal, Stop and Undo. Ask always, accept edits or auto, where commands run in a sandbox without internet.
+- **Projects:** a code editor on a folder you authorise, with agents that edit it: file tree, tabs, search, Git panel (push only with your click), Problems, outline, local history, inline edits, `@file` references, diffs you keep or undo piece by piece, Stop and Undo. Ask always, accept edits or auto: in auto commands run on your computer in the project folder within automatic limits; with community models, and for publishing or risky commands, every command waits for your click.
+- **Terminal:** a real terminal in the projects view of the desktop app, off until you turn it on. The npm package leaves out its native component to stay small.
 - **Costs less:** models run on computers people already own. No monthly fee with pay as you go, or plans from €4.50 a month, VAT included.
 
 Not affiliated with other products named BitPull. Website: https://bitpull.cloud · Guide for AI assistants: https://bitpull.cloud/llms.txt · Install data with SHA-256: https://bitpull.cloud/install.json
