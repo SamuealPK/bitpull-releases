@@ -39,6 +39,7 @@ The tools include:
 - `ask_group_model`, `list_group_models`: the model run by the person's own group of computers
 - `bitpull_groups`, `bitpull_start_group`, `bitpull_stop_group`, `bitpull_share_group` and the others named `bitpull_*`: every item of the app's control panel
 - `run_job`, `job_status`, `my_balance`
+- `bitpull_file_limits`, `save_job_files`: large files of any kind, encrypted here and sent directly; results are saved in a folder you authorised and then deleted from BitPull's store
 - `bitpull_login`, `bitpull_logout`, `bitpull_setup_status`, `bitpull_set_lending_rules`, `bitpull_set_ai_limits`, `bitpull_install`, `bitpull_download_model`
 
 ## Command line
@@ -56,7 +57,12 @@ bitpull ask "…"            ask an open model on the network
 bitpull run python:3.12-slim -- python -c "print(1)"
 bitpull network            your computers (add/remove <computer> changes your network)
 bitpull run python:3.12-slim --mine -- python -c "print(1)"
+bitpull run busybox --file big.bin=./big.bin --out ./results -- sh -c "gzip -c big.bin > out/big.bin.gz"
 ```
+
+From a phone, open https://bitpull.cloud/app: after turning on "Use from your phone" in the app on your computer and scanning its code, the phone shows that computer's Projects, terminal, chat and settings, encrypted end to end. Everything runs on the computer.
+
+Large files have no fixed limit: the command says how much one job can carry right now. Splitting big work into several jobs gives the same result, faster. After a job, its data is deleted from the computer that ran it as soon as the result is delivered, and encrypted copies in transit within 24 hours at most.
 
 ## Privacy and safety
 
@@ -67,6 +73,7 @@ bitpull run python:3.12-slim --mine -- python -c "print(1)"
 - Requests to proprietary models offered by the platform (Claude, GPT, Gemini…) pass through BitPull's server to the provider: they are **not** end-to-end encrypted.
 
 Terms: https://bitpull.cloud/legal/terms · Privacy: https://bitpull.cloud/legal/privacy
+
 ## Downloads in this repository
 
 This repository hosts the signed release builds of the BitPull desktop app; the source code is private. Get the latest version from the [Releases](https://github.com/SamuealPK/bitpull-releases/releases/latest) page, from https://bitpull.cloud/download or with the install scripts above.
