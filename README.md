@@ -34,7 +34,7 @@ You can also connect it from the app, or with `bitpull connect claude-code|codex
 Then ask your assistant to log in. The `bitpull_login` tool shows a link and a code, and **you** approve it on the website: the assistant never sees your password.
 
 The tools include:
-- `search_repos`, `read_manifest`, `fetch_files`
+- `search_repos`, `read_manifest`, `fetch_files`: code shared by BitPull users, and public GitHub repositories BitPull offers (permissive or GPL licence), read straight from GitHub at a fixed commit
 - `ask_open_model`, `use_open_model`, `list_open_models`
 - `ask_group_model`, `list_group_models`: the model run by the person's own group of computers
 - `bitpull_groups`, `bitpull_start_group`, `bitpull_stop_group`, `bitpull_share_group` and the others named `bitpull_*`: every item of the app's control panel
@@ -60,7 +60,9 @@ bitpull run python:3.12-slim --mine -- python -c "print(1)"
 bitpull run busybox --file big.bin=./big.bin --out ./results -- sh -c "gzip -c big.bin > out/big.bin.gz"
 ```
 
-From a phone, open https://bitpull.cloud/app: after turning on "Use from your phone" in the app on your computer and scanning its code, the phone shows that computer's Projects, terminal, chat and settings, encrypted end to end. Everything runs on the computer.
+From a phone, open https://bitpull.cloud/app: after turning on "Use from your phone" in the app on your computer and scanning its code, the phone shows that computer's Projects, terminal, chat and settings, encrypted end to end. Everything runs on the computer. Terminals opened from the phone keep running on the computer for an hour after the phone goes away, and chat answers are saved by the computer.
+
+Shared groups: several people (classmates, friends) put some of their computers together to run large open models. Anyone can create one and invite others with a code; each person offers only their own computers. Models are free inside the group; traffic is always paid in credits. A group can also lend to people outside it, and its members share half of what it earns. Use a group only with people you trust: its computers process the members' questions.
 
 Large files have no fixed limit: the command says how much one job can carry right now. Splitting big work into several jobs gives the same result, faster. After a job, its data is deleted from the computer that ran it as soon as the result is delivered, and encrypted copies in transit within 24 hours at most.
 
