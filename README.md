@@ -10,6 +10,7 @@
 - **Projects:** a code editor on a folder you authorise, with agents that edit it: file tree, tabs, search, Git panel (push only with your click), Problems, outline, local history, inline edits, `@file` references, diffs you keep or undo piece by piece, Stop and Undo. Ask always, accept edits or auto: in auto commands run on your computer in the project folder within automatic limits; with community models, and for publishing or risky commands, every command waits for your click.
 - **Quick commands (from 0.1.32):** in Projects and the chat, `/` opens commands (`/compact`, `/review`, `/init`, `/btw`, `/model`…) and your own custom commands from `.bitpull/skills/<name>/SKILL.md` or `~/.bitpull/skills/`; `!command` runs in the project's folder and the agent answers about it; `@` for files, `?` for keyboard shortcuts, remappable in `~/.bitpull/keybindings.json` (Ctrl+X then Ctrl+S sends the queue now). The agent follows `BITPULL.md`, `AGENTS.md` or `CLAUDE.md`. Drag a folder onto the app's window to open it in Projects.
 - **Models in the terminal (from 0.1.33):** `bitpull models` lists every model you can use; `bitpull chat kimi` talks to one (`-p "question"` for one answer, or pipe text in); `bitpull code` runs the Projects agent on the folder you are in, asking you before each change or command; `eval "$(bitpull env)"` or `bitpull connect aider` let other programs use BitPull's models through the app's OpenAI-compatible address, with a key that opens only the models. In the app's own terminal `bitpull` needs no install.
+- **Projects like Cursor (from 0.1.36):** VS Code's Seti file icons and a views bar with Explorer, Search, Source Control, Extensions and Run and Debug. Extensions from Open VSX install their colour themes, icon themes, snippets and language grammars (never their code). Integrations from the official MCP registry give the agent tools, each use approved by you. Run and Debug starts Node.js and Python (debugpy) with breakpoints, variables, watch, call stack and a debug console. `bitpull chat` and `bitpull code` have a full terminal interface.
 - **Terminal:** a real terminal in the projects view of the desktop app, off until you turn it on. The npm package leaves out its native component to stay small.
 - **Costs less:** models run on computers people already own. No monthly fee with pay as you go, or plans from €4.50 a month, VAT included.
 
@@ -77,6 +78,10 @@ Large files have no fixed limit: the command says how much one job can carry rig
 - Requests to proprietary models offered by the platform (Claude, GPT, Gemini…) pass through BitPull's server to the provider: they are **not** end-to-end encrypted.
 
 Terms: https://bitpull.cloud/legal/terms · Privacy: https://bitpull.cloud/legal/privacy
+
+## Third-party notices
+
+The editor in Projects uses the Seti file icon theme of Visual Studio Code (© Microsoft Corporation, MIT; Seti UI © Jesse Weed, MIT), the language associations of Visual Studio Code's built-in extensions (MIT), Codicons (© Microsoft Corporation, CC BY 4.0), Monaco Editor (MIT), vscode-textmate and vscode-oniguruma (MIT) and xterm.js (MIT); extensions installed from Open VSX keep their own licences. Their licences ship with the app (Projects › Settings › Credits).
 
 ## Downloads in this repository
 
