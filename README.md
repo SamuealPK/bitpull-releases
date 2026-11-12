@@ -3,7 +3,7 @@
 **Share code knowledge and computing power with AI tools.** BitPull is a desktop app and command-line tool for developers. With it you can:
 
 - **Publish signed, AI-readable code repositories.** Claude Code, Codex, Cursor and other AI tools search them through MCP.
-- **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Individual lending is off until you turn it on, with daily, weekly and monthly limits. Running group models are always shared with the community, with their owner and members first; custom Hugging Face models stay private.
+- **Lend idle CPU, memory and open AI models** (text, vision, images, speech, music) and earn credits. Individual lending is off until you turn it on, with daily, weekly and monthly limits. Running group models are shared with the community, with their owner and members first, unless their maker keeps them private (Pro and Max plans); custom Hugging Face models stay private.
 - **Use the community network:** run jobs in sandboxes on other people's computers, encrypted on the way, and ask open models.
 - **My network:** computers you add run your own jobs first, for free. They can also run one larger model together, from the dashboard, and offer it to others for credits.
 - **Chat and local APIs:** a chat page for every model, and OpenAI, Claude Messages and Ollama compatible endpoints on this computer for your other tools.
@@ -71,7 +71,7 @@ bitpull run busybox --file big.bin=./big.bin --out ./results -- sh -c "gzip -c b
 
 From a phone, open https://bitpull.cloud/app: after turning on "Use from your phone" in the app on your computer and scanning its code, the phone shows that computer's Projects, terminal, chat and settings, encrypted end to end. Everything runs on the computer. Terminals opened from the phone keep running on the computer for an hour after the phone goes away, and chat answers are saved by the computer.
 
-Shared groups: several people (classmates, friends) put some of their computers together to run large open models. Anyone can create one and invite others with a code; each person offers only their own computers. Models are free inside the group; traffic is always paid in credits. A running group always lends to people outside it too, with its members first, and its members share half of what it earns. Use a group only with people you trust: its computers process the members' questions.
+Shared groups: several people (classmates, friends) put some of their computers together to run large open models. Anyone can create one and invite others with a code; each person offers only their own computers. Each member uses the group free for the hours their plan includes each month (Base 50, Pro 120, Max unlimited, pay as you go none), then pays in credits like anyone else, half going back to the members; traffic is always paid in credits. A running group lends to people outside it too, with its members first, and its members share half of what it earns; on Pro and Max the person who made it can keep it private. Use a group only with people you trust: its computers process the members' questions.
 
 Large files have no fixed limit: the command says how much one job can carry right now. Splitting big work into several jobs gives the same result, faster. After a job, its data is deleted from the computer that ran it as soon as the result is delivered, and encrypted copies in transit within 24 hours at most.
 
