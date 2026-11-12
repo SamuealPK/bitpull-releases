@@ -91,7 +91,7 @@ The editor in Projects uses the Seti file icon theme of Visual Studio Code (© M
 
 ## Downloads in this repository
 
-This repository hosts the signed release builds of the BitPull desktop app; the source code is private. Get the latest version from the [Releases](https://github.com/SamuealPK/bitpull-releases/releases/latest) page, from https://bitpull.cloud/download or with the install scripts above.
+This repository hosts the signed release builds of the BitPull desktop app; the source code of the app, the CLI and the MCP server is at [SamuealPK/bitpull-client](https://github.com/SamuealPK/bitpull-client) (FSL-1.1-ALv2; the server is not included). Get the latest version from the [Releases](https://github.com/SamuealPK/bitpull-releases/releases/latest) page, from https://bitpull.cloud/download or with the install scripts above.
 
 - **macOS:** open the `.dmg` and drag BitPull to Applications. The first time, right-click the app and choose Open (the install script avoids this step).
 - **Windows:** run the `-setup.exe` installer. If SmartScreen appears, choose More info → Run anyway.
