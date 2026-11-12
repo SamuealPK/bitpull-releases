@@ -98,3 +98,7 @@ This repository hosts the signed release builds of the BitPull desktop app; the 
 - **Linux:** install the `.deb` or `.rpm`, or make the `.AppImage` executable and run it.
 
 Every file's SHA-256 is listed on the release page and in https://bitpull.cloud/install.json.
+
+## Questions and ideas
+
+Ask questions, share ideas and show what you built in [Discussions](https://github.com/SamuealPK/bitpull-releases/discussions). Problems and their fixes: https://bitpull.cloud/help
