@@ -45,7 +45,7 @@ The tools include:
 - `ask_open_model`, `use_open_model`, `list_open_models`
 - `ask_group_model`, `list_group_models`: the model run by the person's own group of computers
 - `bitpull_groups`, `bitpull_start_group`, `bitpull_stop_group`, `bitpull_share_group` and the others named `bitpull_*`: every item of the app's control panel
-- `run_job`, `job_status`, `my_balance`
+- `run_job`, `job_status`, `my_balance` (from 0.1.46 `run_job` takes `gpu`: the graphics card class the job needs, from consumer to b200)
 - `bitpull_file_limits`, `save_job_files`: large files of any kind, encrypted here and sent directly; results are saved in a folder you authorised and then deleted from BitPull's store
 - `bitpull_login`, `bitpull_logout`, `bitpull_setup_status`, `bitpull_set_lending_rules`, `bitpull_set_ai_limits`, `bitpull_install`, `bitpull_download_model`
 - `preview_open`, `preview_look`, `preview_click`, `preview_type`, `preview_scroll`, `preview_screenshot` (from 0.1.41): see, test and photograph the site you are building on this computer, in the BitPull app's preview
